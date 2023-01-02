@@ -1,0 +1,4 @@
+type Cookies{
+    id: String,
+    text: String
+}

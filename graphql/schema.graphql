@@ -1,1 +1,11 @@
-
+type Query {
+    allCookies:[Cookies]
+    randomCookie:Cookies
+    searchTextOfCookie(text:String):[Cookies]
+    
+}
+type Mutation {
+    deleteCookie(code:String):CookieDelete
+    createCookie(text:String):CookieCreated
+    editCookie(code:String,text:String):CookieEdit
+}
